@@ -211,6 +211,12 @@ td {
         height: 70px;
     }
 
+    .open {
+        height: 100vh;
+        justify-content: space-between;
+        z-index: 10000;
+    }
+
     header .wrapper {
         flex-direction: row;
         width: 100%;
@@ -232,6 +238,14 @@ td {
         display: none;
     }
 
+    .open nav,
+    .open.location {
+        display:block
+    }
+
+    .open .social{
+        display: flex;
+    }
     .show {
         height: 100vh;
         z-index: 1000;
@@ -262,5 +276,21 @@ td {
     main .gallery #img-1 {
         width: 100%;
         margin: 20px 0px;
+    }
+    nav ul {
+        height: 45vh;
+        text-align: center;
+    }
+
+    nav ul a {
+        font-size: 30pt;
+    }
+
+    .location {
+        padding: 0 34px;
+        font-size: 20pt;
+    }
+    .social a {
+        font-size: 20pt;
     }
 }
